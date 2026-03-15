@@ -13,23 +13,9 @@ hidden: true
 <br />
 
 <Cards>
-  <Card kind="tile" title="Customize" href="#" icon="fa-duotone fa-brush">Style the widget to match your brand</Card>
-
-  <Card kind="tile" title="Integrations" href="#" icon="fa-duotone fa-arrow-down-left-and-arrow-up-right-to-center">Connect with third-party services</Card>
-
-  <Card kind="tile" title="CLI" href="#" icon="fa-duotone fa-terminal">Manage resources from your terminal</Card>
-
-  <Card kind="tile" title="Security" href="" icon="fa-duotone fa-shield-dog">Learn how we secure your data</Card>
-
-  <Card kind="tile" title="Common Issues" href="" icon="fa-duotone fa-file-circle-info">Troubleshoot common issues</Card>
-
-  <Card kind="tile" title="Sync" href="#" icon="fa-duotone fa-code-compare">Connect to a storage provider</Card>
+  <Card kind="tile" title="My Approach" href="/docs/my-approach" icon="fa-duotone fa-lightbulb">How I think about documentation architecture</Card>
+  <Card kind="tile" title="Case Studies" href="/docs/case-studies" icon="fa-duotone fa-folder-open">Real examples from my work</Card>
+  <Card kind="tile" title="About Me" href="/docs/about-me" icon="fa-duotone fa-user">Background and experience</Card>
 </Cards>
-
-**[→ My Approach](link)** — How I think about documentation architecture
-
-**[→ Case Studies](link)** — Real examples from my work
-
-**[→ About Me](link)** — Background and experience
 
 <br />
