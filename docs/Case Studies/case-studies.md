@@ -1,5 +1,5 @@
 ---
-title: Case Studies
+title: Examples
 excerpt: Here are three detailed examples
 deprecated: false
 hidden: false
