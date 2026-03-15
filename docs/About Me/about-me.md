@@ -1,5 +1,5 @@
 ---
-title: About me
+title: Background
 excerpt: >-
   I'm Tom Aciukewicz, a documentation architect with 25+ years building
   technical documentation for complex enterprise and AI platforms.
