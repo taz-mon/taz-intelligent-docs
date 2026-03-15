@@ -8,6 +8,10 @@ excerpt: >-
   humans and LLMs. 
 hidden: true
 ---
+## Where to start
+
+<br />
+
 <Cards>
   <Card kind="tile" title="Customize" href="#" icon="fa-duotone fa-brush">Style the widget to match your brand</Card>
 
@@ -22,4 +26,10 @@ hidden: true
   <Card kind="tile" title="Sync" href="#" icon="fa-duotone fa-code-compare">Connect to a storage provider</Card>
 </Cards>
 
-[Explore my approach] [Browse case studies] [About me]
+**[→ My Approach](link)** — How I think about documentation architecture
+
+**[→ Case Studies](link)** — Real examples from my work
+
+**[→ About Me](link)** — Background and experience
+
+<br />
