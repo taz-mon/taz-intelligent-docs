@@ -5,6 +5,8 @@ excerpt: >-
   AI-aware documentation systems.
 hidden: true
 ---
+This portfolio showcases how I approach documentation as infrastructure using strategic systems design, phased roll outs, contribution workflows, and intelligent content pipelines that serve both humans and LLMs.
+
 Explore my documentation philosophy, real-world results, and professional background.
 
 ## Where to start
