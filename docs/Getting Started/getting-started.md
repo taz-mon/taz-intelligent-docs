@@ -5,7 +5,7 @@ excerpt: >-
   AI-aware documentation systems.  This portfolio showcases how I approach
   documentation as infrastructure:  strategic systems design, phased rollouts,
   contribution workflows, and  intelligent content pipelines that serve both
-  humans and LLMs.  [Explore my approach] [Browse case studies] [About me]
+  humans and LLMs. 
 hidden: true
 ---
 <Cards>
@@ -22,4 +22,4 @@ hidden: true
   <Card kind="tile" title="Sync" href="#" icon="fa-duotone fa-code-compare">Connect to a storage provider</Card>
 </Cards>
 
-<br />
+[Explore my approach] [Browse case studies] [About me]
