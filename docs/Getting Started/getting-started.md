@@ -6,7 +6,7 @@ excerpt: >-
   documentation as infrastructure:  strategic systems design, phased rollouts,
   contribution workflows, and  intelligent content pipelines that serve both
   humans and LLMs.  [Explore my approach] [Browse case studies] [About me]
-hidden: false
+hidden: true
 ---
 <Cards>
   <Card kind="tile" title="Customize" href="#" icon="fa-duotone fa-brush">Style the widget to match your brand</Card>
