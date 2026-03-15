@@ -1,5 +1,5 @@
 ---
-title: My Approach
+title: How I Work
 excerpt: >-
   This is your methodology foundation—it explains how you think about
   documentation as infrastructure, your core "configure it, test it, document
