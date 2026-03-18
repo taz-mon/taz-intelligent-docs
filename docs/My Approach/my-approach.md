@@ -8,15 +8,15 @@ hidden: false
 metadata:
   robots: index
 ---
-I write about systems I use. Before documenting a Kubernetes configuration on different providers, I deployed an environment after configuring resources for it. Before explaining an API endpoint, I call it. This catches the gap between what engineering intended and what a user actually encounters, and it's why the procedures I write tend to work the first time.
+I write about systems I use. Before documenting a Kubernetes configuration on different providers, I deployed an environment after configuring resources for it. Before explaining an API endpoint, I call it. This reveals gaps between what engineering intended and what a user actually encounters. It's why the procedures I write tend to work the first time.
 
 ## Documentation as a system
 
 I think the best documentation has a sensible structure, a conversational tone, and a rules-based process for keeping it accurate as the product changes.
 
-At Pega, I designed the GitHub structure for Kubernetes deployment runbooks across six environments: AKS, EKS, GKE, OpenShift, TKGI, and MiniKube. Each runbook followed a consistent model so a developer could navigate directly to their environment without having to orient themselves. That structure is still in use.
+At Pega, I designed the GitHub structure for Kubernetes deployment runbooks across six environments: AKS, EKS, GKE, OpenShift, TKGI, and MiniKube. Each runbook followed a consistent model so any developer, regardless of their platform experience, could navigate directly to their environment without re-orienting. That structure is still in use.
 
-At Legion Intelligence, I built the same kind of system from scratch as the sole writer: a Docusaurus Help Center managed in GitLab, with a branching workflow that supports multiple features in parallel. The process runs: create a feature branch off main, clone locally in VS Code, draft and commit updates, push, complete review via merge request, then engineering merges and squashes. Repeatable, linear, manageable at speed.
+At Legion Intelligence, as the sole writer there, I am building the help center from the ground up as features emerge or new sections become available in the UI. I work in a Docusaurus project managed in GitLab, with a branching workflow that supports multiple features in parallel. The process involves creating a feature branch off main, cloning it locally in VS Code, drafting and committing updates, and pushing, complete review via merge request, then engineering merges and squashes. Repeatable, linear, manageable at speed.
 
 ## AI as a workflow layer
 
