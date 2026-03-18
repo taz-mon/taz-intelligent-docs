@@ -16,15 +16,25 @@ I think the best documentation has a sensible structure, a conversational tone, 
 
 At Pega, I designed the GitHub structure for Kubernetes deployment runbooks across six environments: AKS, EKS, GKE, OpenShift, TKGI, and MiniKube. Each runbook followed a consistent model so any developer, regardless of their platform experience, could navigate directly to their environment without re-orienting. That structure is still in use.
 
-At Legion Intelligence, as the sole writer there, I am building the help center from the ground up as features emerge or new sections become available in the UI. I work in a Docusaurus project managed in GitLab, with a branching workflow that supports multiple features in parallel. The process involves creating a feature branch off main, cloning it locally in VS Code, drafting and committing updates, and pushing, complete review via merge request, then engineering merges and squashes. Repeatable, linear, manageable at speed.
+At Legion Intelligence, as the sole writer there, I am building the help center from the ground up as features emerge or new sections become available in the UI. I work in a Docusaurus project managed in GitLab, with a branching workflow that supports multiple features in parallel. The process is repeatable, linear, manageable at speed and structured like this:
+
+1. Create a feature branch off main.
+2. Clone it locally in VS Code.
+3. Draft, review local builds with an LLM-based edit, commit updates, and push to the repository.
+4. Complete the final review with reviewers using a merge request
+5. I set the MR to be automatically merge and squash after code rabbit completes its internal testing and approves the pipeline run.
 
 ## AI as a workflow layer
 
 I use Claude in two dedicated projects, each with a specific job.  
 
-The first is a drafting environment loaded with my style guide, so every initial draft starts from a consistent voice, structure, and terminology baseline. I capture configuration workflows on video using Loom, run the transcript through this project to generate a first draft, then update it for technical accuracy. This cuts initial draft time significantly while keeping quality high.
+### Drafting content project
 
-The second is a process guide that walks me through the branch/clone/commit/push/MR sequence as a repeatable checklist when I'm managing multiple feature branches simultaneously.
+I loaded my style guide into the project to create this environment. This ensures that every initial draft starts from a consistent voice, structure, and terminology baseline. I capture configuration workflows on video using Loom, run the transcript through this project to generate a first draft, then update it for technical accuracy. This cuts initial draft time significantly while keeping quality high.
+
+### Git workflow project
+
+This project has a git-savvy instruction set that I created to be available for me to ask questions if my builds have trouble or for walking me through the branch/clone/commit/push/MR sequence if I ever get a merge conflict. This project helps me problem-solve hiccups, such as running npm install to align local builds with the latest package versions. This way, I don't have to bother project engineers with build or git questions and stay on top of my workflow. It's a reassurance to have a repeatable checklist when I'm managing multiple feature branches simultaneously.
 
 ## Style governance that actually runs
 
