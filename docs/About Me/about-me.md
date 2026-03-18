@@ -10,7 +10,7 @@ metadata:
 ---
 My career has been split between two major chapters. I spent 16 years at Egenera documenting converged infrastructure systems, then 9 years at Pegasystems documenting a large-scale platform serving financial services, government, and healthcare. More recently, I worked as a technical writer at Legion Intelligence, documenting configuration workflows and system integrations for an AI/ML platform in the government and defense space.
 
-Across these roles, one principle has remained constant: I don't write about systems I haven't deployed. Before documenting a Kubernetes configuration on AKS, I deploy it. Before explaining an API endpoint, I call it. This hands-on approach catches inaccuracies that theoretical documentation misses. It's become my signature—the work is reliable because it's based on actually tested procedures.
+Across these roles, one principle has remained constant: I write about systems I understand after using it. Before documenting a Kubernetes configuration on different providers, I deployed an environment after configuring resources for it. Before explaining an API endpoint, I call it. This hands-on approach catches inaccuracies that theoretical documentation misses. It's why my documentation is reliable and focused on the the customer or developer perspective.
 
 ## Why I'm Moving Forward
 
