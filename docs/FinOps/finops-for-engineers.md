@@ -48,4 +48,4 @@ Building documentation to support an AI-assisted workflow like CloudZero's plugi
 * Release workflows need to account for re-indexing pipelines, not just publication timelines.
 * Quality validation needs to include testing how AI responses change when documentation is updated, not just whether the article reads well.
 
-The engineers using CloudZero's plugin need grounded, articulate cost intelligence to report into their FinOps managers. The documentation architecture that supports that has to work the same way: structured, precise, and built to operate continuously rather than published and forgotten.
+The engineers using CloudZero's plugin need grounded, articulate cost intelligence to act on. The documentation architecture that supports that has to work the same way: structured, precise, and built to operate continuously rather than published and forgotten.
