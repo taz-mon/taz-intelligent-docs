@@ -28,14 +28,16 @@ A practical quality control stack has several layers including:
 * A style guide defining the tone, structure, and terminology is included as part of build quality checks running operationally before content hits the repository. At Legion Intelligence, I built a style guide in Confluence and wired its standards directly into an LLM proofreading prompt, so every content check-in is validated against the guide before it merges.
 * The next layer is fabrication detection: building verification workflows that cross-reference AI-generated content against authoritative internal sources before publication, catching plausible-sounding errors that grammar checks miss entirely.
 * At the indexing layer, `robots.txt` and `llms.txt` define what enters the RAG pipeline. The `llms.txt` file signals to language models which content is authoritative, how the site is organized, and what each content type is intended to answer. Research into agent documentation access patterns confirms that agents treat `llms.txt` as a primary discovery mechanism; sites without one force agents to reconstruct structure from memory, which produces inconsistent and sometimes fabricated URLs. Without these controls, a RAG pipeline indexes indiscriminately, and answer quality reflects it.
-  ## Continuous improvement through content architecture and metrics
-  Documentation quality at AI-native platforms degrades silently without feedback mechanisms. Two failure modes compound each other: content becomes stale as the product evolves, and content architecture works against agent consumption patterns.
-  Research into how agents consume documentation reveals that agents are mechanically prevented from seeing content past truncation thresholds — often around 150,000 characters — without knowing they've missed anything. Long pages with tabbed or dropdown-filtered content, common in many documentation sites, serialize into undifferentiated walls of text and must be avoided. A better approach is requiring articles to stay under 800 words (~5000 characters). Such focused pages, scoped to specific tasks and audiences, dramatically outperform long reference pages for agent retrieval accuracy.
+
+## Continuous improvement through content architecture and metrics
+
+Documentation quality at AI-native platforms degrades silently without feedback mechanisms. Two failure modes compound each other: content becomes stale as the product evolves, and content architecture works against agent consumption patterns.
+Research into how agents consume documentation reveals that agents are mechanically prevented from seeing content past truncation thresholds — often around 150,000 characters — without knowing they've missed anything. Long pages with tabbed or dropdown-filtered content, common in many documentation sites, serialize into undifferentiated walls of text and must be avoided. A better approach is requiring articles to stay under 800 words (~4000 characters). Such focused pages, scoped to specific tasks and audiences, dramatically outperform long reference pages for agent retrieval accuracy.
 
 The improvement loop needs to be instrumented:
 
 * Site analytics identify content users abandon immediately
-* Support ticket patterns surface recurring gaps and must prioritized in the organization
+* Support ticket patterns surface recurring gaps and must be prioritized in the organization
 * AI response quality metrics show which content areas are producing unreliable answers. At AI-native platforms, AI response quality adds a third feedback signal, one that can close this quality gap and lead to better responses.
 
 The documentation architecture that supports continuous improvement is structured, instrumented, and built to operate continuously rather than maintained in periodic bursts.
