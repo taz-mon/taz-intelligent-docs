@@ -12,10 +12,6 @@ With Cloud computing and AI adoption, organizations now implement on-demand reso
 
 Traditional design patterns for managing computing resources (Inform → Optimize → Operate) is being replaced with a Scopes framework. Here, a  capability (like allocation or anomaly detection) is applied differently depending on the domain, with tailored considerations for how usage is measured, how costs are incurred, and who's responsible. Your GenAI team will have different specific metrics than your core cloud infrastructure team—a GenAI model consuming GPU hours doesn't behave like a web app on EC2 or a SaaS subscription, but all three still need to be tracked, allocated, and optimized.
 
-The key to success in this new environment is regular communication, shared understanding, and strategic planning that balances technological flexibility with financial discipline. Regular and open communication between technical and financial teams is needed. That’s where FinOps – Financial Operations comes in!
-
-FinOps has emerged to bridge the gap between technology and finance departments brought about by cloud computing. It introduces the concept of a “split brain” in organizations, fostering individuals who comprehend both technical and financial aspects of cloud operations. This aids in making informed decisions that balance technical needs with budget constraints. By promoting a culture of transparency, accountability, and continuous improvement, FinOps enables organizations to leverage cloud flexibility while maintaining financial control and predictability. It involves a set of practices that enable teams to balance speed, cost, and quality to make informed business decisions.
-
 How Scopes Change What Engineers Need to Know
 
 Public Cloud scope (instance rightsizing, reserved instances)
