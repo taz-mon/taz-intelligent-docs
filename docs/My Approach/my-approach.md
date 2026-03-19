@@ -5,6 +5,8 @@ excerpt: >-
   experience writing documentation. 
 deprecated: false
 hidden: false
+link:
+  url: https://intelligent-documentation.readme.io/update/docs/my-approach
 metadata:
   robots: index
 ---
