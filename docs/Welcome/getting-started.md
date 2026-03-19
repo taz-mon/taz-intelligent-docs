@@ -3,7 +3,7 @@ title: Welcome to intelligent-documentation
 excerpt: >-
   I'm Tom Aciukewicz, a documentation architect focused on building  scalable,
   AI-aware documentation systems.
-hidden: true
+hidden: false
 ---
 This portfolio showcases how I approach documentation as infrastructure using strategic systems design, phased roll outs, contribution workflows, and intelligent content pipelines that serve both humans and LLMs.
 
