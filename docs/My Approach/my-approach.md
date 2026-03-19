@@ -6,6 +6,7 @@ excerpt: >-
 deprecated: false
 hidden: false
 link:
+  new_tab: true
   url: https://intelligent-documentation.readme.io/update/docs/my-approach
 metadata:
   robots: index
