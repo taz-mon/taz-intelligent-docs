@@ -1,12 +1,16 @@
 ---
-title: 'Documenting FinOps for Engineers: Runtime documents'
-excerpt: CloudZero's Claude Code plugin makes documentation a runtime dependency.
+title: Documenting FinOps for Engineers
+excerpt: >-
+  CloudZero's Claude Code plugin makes documentation a runtime dependency. When
+  engineers ask cost questions in plain language and get AI-generated answers,
+  the quality of those answers traces back to decisions made long before any
+  query runs.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-Engineers using CloudZero's Claude Code plugin to ask cost questions in plain language. With it they can trace spend to owners, and run multi-step analysis across services, teams, and environments, all inside a single conversation without opening a dashboard. 
+Engineers use CloudZero's Claude Code plugin to ask cost questions in plain language. With it they can trace spend to owners, and run multi-step analysis across services, teams, and environments, all inside a single conversation without opening a dashboard. 
 
 This is the documentation dependency: The answers they get are only as good as the structured knowledge behind them. That dependency requires reliable RAG pipelines and quality guardrails — and both trace back to documentation decisions made to ensure users get accurate and verifiable answers. 
 
@@ -28,7 +32,7 @@ For an AI-assisted FinOps workflow to produce trustworthy answers, the knowledge
 * **Scopes require explicit boundaries:** The 2025 FinOps Framework introduces modular scopes: Public Cloud, SaaS, GenAI, Data Centers, each with different cost drivers, different metrics, and different optimization patterns. The documentation team and financial engineers need to collaborate here, so the documentation articulates clear scope boundaries so the plugin prompt responses are reliable.
 * **API reference content needs narrative context:** CloudZero's cost intelligence model exposes dimensions, allocation logic, and unit cost modeling through its API. Engineers querying the plugin in plain language are often asking questions that map to specific API behaviors. With documentation integrity, writers need to go beyond explaining only what an endpoint does; the articles must include context like when is this API useful or what business question is it fulfilling so AI responses using it can provide end users with the right narrative.
 
-Each of these bring its own architectural challenges.
+Each of these decisions shapes what the RAG system can reliably retrieve.
 
 ## The RAG pipeline as documentation architecture
 
@@ -38,7 +42,7 @@ This means documentation quality has a direct and measurable impact on answer qu
 
 For documentation architects, content quality and indexing structure are both operational concerns. When the RAG system runs, the quality of every AI-generated response traces back to the accuracy of the documentation and how well it was chunked, tagged, and scoped before it entered the index.
 
-That control starts with two files most documentation teams haven't prioritized: `robots.txt` and `llms.txt`. The first governs what crawlers can index; the second, an emerging convention for AI-readable site structure.  Importantly, writers needs to tweak the `llms.txt` file so it explicitly signals to language models which content is authoritative, how it's organized, and what it's intended to answer. Together these mappings define the boundary between content that should inform AI responses and content that shouldn't: promotional pages, deprecated procedures, draft articles that haven't cleared review. Without that boundary, a RAG pipeline indexes everything indiscriminately, and answer quality reflects it.
+That control starts with two files most documentation teams haven't prioritized: `robots.txt` and `llms.txt`. The first governs what crawlers can index; the second, an emerging convention for AI-readable site structure.  Importantly, writers maintain the `llms.txt` file so it explicitly signals to language models which content is authoritative, how it's organized, and what it's intended to answer. Together these mappings define the boundary between content that should inform AI responses and content that shouldn't: promotional pages, deprecated procedures, draft articles that haven't cleared review. Without that boundary, a RAG pipeline indexes everything indiscriminately, and answer quality reflects it.
 
 ## What this means for documentation design
 
