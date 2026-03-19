@@ -8,7 +8,7 @@ metadata:
 ---
 Engineers using the CloudZero's Claude Code plugin to ask cost questions in plain language. With it they can trace spend to owners, and run multi-step analysis across services, teams, and environments, all inside a single conversation without opening a dashboard. 
 
-This is the documentation dependency: The answers they get are only as good as the structured knowledge behind them. CloudZero needs reliable RAG and needs guardrails for it to ensure users get accurate and verifiable answers. 
+This is the documentation dependency: The answers they get are only as good as the structured knowledge behind them. That dependency requires reliable RAG pipelines and quality guardrails — and both trace back to documentation decisions made to ensure users get accurate and verifiable answers. 
 
 ## The shift that changes everything
 
