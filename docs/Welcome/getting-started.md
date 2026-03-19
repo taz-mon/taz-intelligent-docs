@@ -4,8 +4,6 @@ excerpt: >-
   I'm Tom Aciukewicz, a documentation architect focused on building  scalable,
   AI-aware documentation systems.
 hidden: false
-link:
-  url: https://intelligent-documentation.readme.io/update/docs/getting-started
 ---
 This portfolio showcases how I approach documentation as infrastructure using strategic systems design, phased roll outs, contribution workflows, and intelligent content pipelines that serve both humans and LLMs.
 
