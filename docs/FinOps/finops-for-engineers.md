@@ -38,6 +38,8 @@ This means documentation quality has a direct and measurable impact on answer qu
 
 For documentation architects, content quality and indexing structure are both operational concerns. When the RAG system runs, the quality of every AI-generated response traces back to the accuracy of the documentation and how well it was chunked, tagged, and scoped before it entered the index.
 
+That control starts with two files most documentation teams haven't prioritized: `robots.txt` and `llms.txt`. The first governs what crawlers can index; the second, an emerging convention for AI-readable site structure.  Importantly, writers needs to tweak the `llms.txt` file so it explicitly signals to language models which content is authoritative, how it's organized, and what it's intended to answer. Together these mappings define the boundary between content that should inform AI responses and content that shouldn't: promotional pages, deprecated procedures, draft articles that haven't cleared review. Without that boundary, a RAG pipeline indexes everything indiscriminately, and answer quality reflects it.
+
 ## What this means for documentation design
 
 Building documentation to support an AI-assisted workflow like CloudZero's plugin requires deliberate choices:
