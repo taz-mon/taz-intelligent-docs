@@ -10,9 +10,7 @@ Best practices for managing operating costs is changing now that cloud and espec
 
 With Cloud computing and AI adoption, organizations now implement on-demand resources. While convenient and impactful from a performance angle, it now means that teams can now incur costs instantly without any pre-approved notions , which can have a devastating impact on ROI.
 
-Traditional design patterns for managing computing resources (Inform → Optimize → Operate) is being replaced with a Scopes framework. Here, a  capability (like allocation or anomaly detection) is applied differently depending on the domain, with tailored considerations for how usage is measured, how costs are incurred, and who's responsible. Your GenAI team will have different specific metrics than your core cloud infrastructure team—a GenAI model consuming GPU hours doesn't behave like a web app on EC2 or a SaaS subscription, but all three still need to be tracked, allocated, and optimized.  
-
-<br />
+Traditional design patterns for managing computing resources (Inform → Optimize → Operate) is being replaced with a Scopes framework. Here, a  capability (like allocation or anomaly detection) is applied differently depending on the domain, with tailored considerations for how usage is measured, how costs are incurred, and who's responsible. Your GenAI team will have different specific metrics than your core cloud infrastructure team—a GenAI model consuming GPU hours doesn't behave like a web app on EC2 or a SaaS subscription, but all three still need to be tracked, allocated, and optimized.
 
 The key to success in this new environment is regular communication, shared understanding, and strategic planning that balances technological flexibility with financial discipline. Regular and open communication between technical and financial teams is needed. That’s where FinOps – Financial Operations comes in!
 
