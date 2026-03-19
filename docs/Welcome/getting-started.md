@@ -14,6 +14,6 @@ Explore my documentation philosophy, real-world results, and professional backgr
 <Cards>
   <Card kind="tile" title="How I Work" href="/docs/my-approach" icon="fa-duotone fa-lightbulb">See how I architect and structure documentation for clarity and scale</Card>
   <Card kind="tile" title="FinOps for Engineers" href="/docs/case-studies" icon="fa-duotone fa-folder-open">Ideas on managing infrastructure costs around your cloud and AI-adoption</Card>
-  <Card kind="tile" title="AI-Native docs" href="/docs/case-studies" icon="fa-duotone fa-folder-open">Browse real-world projects and measurable outcomes from my work</Card>
+  <Card kind="tile" title="AI-Native docs" href="/docs/case-studies" icon="fa-duotone fa-folder-open">Ideas for making AI-native platform documentation operational</Card>
   <Card kind="tile" title="Background" href="/docs/about-me" icon="fa-duotone fa-user">Learn about my background, skills, and professional experience</Card>
 </Cards>
