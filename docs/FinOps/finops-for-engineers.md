@@ -6,7 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
-Engineers using the CloudZero's Claude Code plugin to ask cost questions in plain language. With it they can trace spend to owners, and run multi-step analysis across services, teams, and environments, all inside a single conversation without opening a dashboard. 
+Engineers using CloudZero's Claude Code plugin to ask cost questions in plain language. With it they can trace spend to owners, and run multi-step analysis across services, teams, and environments, all inside a single conversation without opening a dashboard. 
 
 This is the documentation dependency: The answers they get are only as good as the structured knowledge behind them. That dependency requires reliable RAG pipelines and quality guardrails — and both trace back to documentation decisions made to ensure users get accurate and verifiable answers. 
 
@@ -16,16 +16,16 @@ Traditional product documentation assumes a human reader. Someone opens a help a
 
 AI-native products break that model. When the Claude Code plugin pulls context to answer an engineering question about a cost anomaly, it isn't reading articles. It's drawing on structured, allocated, dimensionalized data. The quality of that answer depends on how well the underlying knowledge is organized, scoped, and validated.
 
-CloudZero's plugin ships with nine pre-packaged investigation skills covering cost anomaly detection, top cost drivers, trend analysis, and margin and unit economics. Each skills needs documentation that works two ways: for the human engineer who wants to understand what the skill does and when to use it, and as structured input for the AI reasoning layer that executes it.
+CloudZero's plugin ships with nine pre-packaged investigation skills covering cost anomaly detection, top cost drivers, trend analysis, and margin and unit economics. Each skill needs documentation that works two ways: for the human engineer who wants to understand what the skill does and when to use it, and as structured input for the AI reasoning layer that executes it.
 
-That's a different documentation architecture than traditions documentation teams are building.
+That's a different documentation architecture than traditional documentation teams are building.
 
 ## What documentation needs to support
 
 For an AI-assisted FinOps workflow to produce trustworthy answers, the knowledge layer behind it needs to handle complex documentation team deliverables including:
 
-* **Concept precision matters for accurate reponses:** FinOps concepts like unit economics (cost per customer, cost per feature, cost per workload) are abstract until they're grounded in specific data models. Documentation must  define these concepts specifically, so AI responses can reliably guide action. A definition of "cost per customer" needs to include a definition of customer type, how these customers partake in shared infrastructure costs, and what the unit of measurement is.
-* **Scopes require explicit boundaries:** The 2025 FinOps Framework introduces modular scopes: Public Cloud, SaaS, GenAI, Data Centers, each with different cost drivers, different metrics, and different optimization patterns. The documentation team and finanical engineers need to collaborate here, so the documentation articulates clear scope boundaries so the plugin prompt responses are reliable.
+* **Concept precision matters for accurate responses:** FinOps concepts like unit economics (cost per customer, cost per feature, cost per workload) are abstract until they're grounded in specific data models. Documentation must  define these concepts specifically, so AI responses can reliably guide action. A definition of "cost per customer" needs to include a definition of customer type, how these customers partake in shared infrastructure costs, and what the unit of measurement is.
+* **Scopes require explicit boundaries:** The 2025 FinOps Framework introduces modular scopes: Public Cloud, SaaS, GenAI, Data Centers, each with different cost drivers, different metrics, and different optimization patterns. The documentation team and financial engineers need to collaborate here, so the documentation articulates clear scope boundaries so the plugin prompt responses are reliable.
 * **API reference content needs narrative context:** CloudZero's cost intelligence model exposes dimensions, allocation logic, and unit cost modeling through its API. Engineers querying the plugin in plain language are often asking questions that map to specific API behaviors. With documentation integrity, writers need to go beyond explaining only what an endpoint does; the articles must include context like when is this API useful or what business question is it fulfilling so AI responses using it can provide end users with the right narrative.
 
 Each of these bring its own architectural challenges.
