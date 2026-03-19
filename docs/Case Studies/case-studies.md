@@ -1,25 +1,41 @@
 ---
-title: Evolving Documentation for AI-Native Platforms
-excerpt: Here are three detailed examples
+title: AI-Native Platform Documentation
+excerpt: >-
+  Ideas on making documentation in an AI-native platform  available for
+  operational input.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-AI-native platforms don't just change what documentation covers. They change what documentation does.
-When a product's core value is delivered through AI-generated responses, documentation becomes an operational input, not just an explanatory layer. The strategic work of a documentation architect at these companies looks different from traditional content management: it requires owning tooling, enforcing quality controls, and building feedback loops that treat documentation as infrastructure rather than artifact.
-Domain accuracy as a foundation
-AI-native platforms operate at the intersection of complex technical domains. A FinOps platform spans cloud infrastructure, financial modeling, and multi-vendor billing normalization. An MLOps platform spans model training pipelines, data lineage, and deployment orchestration. In both cases, documentation that defines concepts loosely produces AI responses that are plausible but imprecise.
-Domain accuracy requires a documentation architecture that enforces concept precision: explicit definitions, scoped terminology, and API narrative that connects endpoints to business outcomes rather than just describing what they do. When documentation is structured this way, AI reasoning over it produces answers that hold up under scrutiny. The first strategic priority is getting the domain foundation right, and keeping it right as the product evolves.
-Owning tooling and infrastructure
+When a product's core value is delivered through AI-generated responses, documentation can be the source for  operational input and output in your product. This means a company's doc team is part of your strategic messaging. The documentation architecture has to thoughtfully developed so documentation is built as part of your product DevOps pipeline and includes specific tooling, quality control enforcement. The documentation pipeline has to include feedback loops that treat documentation as infrastructure rather than artifact.
+
+## Domain accuracy as a foundation
+
+AI-native platforms operate at the intersection of complex technical domains. A FinOps platform spans cloud infrastructure, financial modeling, and multi-vendor billing normalization. An MLOps platform spans model training pipelines, data lineage, and deployment orchestration. In both cases, documentation that defines concepts loosely will produce AI responses that are plausible but imprecise. If an end-user isn't trained in proper prompting or if the organization isn't using frontier models to save money, the chances of hallucination or answering a question incorrectly is high.
+Domain accuracy requires a documentation architecture that enforces concept precision: explicit definitions, scoped terminology, and API narratives that can connect endpoints to business outcomes, not just descriptive parameters. When a team documentation structures documentation for AI-readiness, AI reasoning over it is much more likely to produce answers that hold up under scrutiny. The first strategic priority is getting the domain foundation right, and keeping it right as the product evolves.
+
+## Owning tooling and infrastructure
+
 Documentation tooling at AI-native companies is a core competency, not a support function. The documentation architect owns the CMS platform, the git-based authoring workflow, the automation framework, and the pipeline that moves content from draft to indexed and available.
-In practice this means git-based workflows with merge request review processes that enforce quality before content reaches production, automated builds that validate structure, and CMS configurations that support multi-audience delivery. It also means managing upstream dependency changes proactively — documentation infrastructure that drifts out of sync with its dependencies fails quietly, and quietly failing infrastructure is the hardest kind to debug.
-AI quality controls
+In practice this means git-based workflows with merge request review processes that enforce quality before content reaches production, automated builds that validate structure, and CMS configurations that support multi-audience delivery.  It also means staying ahead of dependency updates in the platform. For example, a doc build synced with the platform can encounter stale npm packages, causing the doc build to fail without the repository updating the npm version in the repository, with no obvious error pointing to the cause. I have personally managed this by running npm install to align local builds with upstream package versions and validating commits before submission, keeping merge requests consistently clean.
+
+## AI quality controls
+
 When documentation feeds an AI reasoning layer, quality control requires new mechanisms. Style and grammar checks are necessary but insufficient. The harder problems are hallucination risk, citation integrity, and the boundary between content that should inform AI responses and content that shouldn't.
-A practical quality control stack has several layers. A style guide defines tone, structure, and terminology — and that guide needs to be operational, not just published. At Legion Intelligence, I built a style guide in Confluence and wired its standards directly into an LLM proofreading prompt, so every content check-in is validated against the guide before it merges. The next layer is fabrication detection: building verification workflows that cross-reference AI-generated content against authoritative internal sources before publication, catching plausible-sounding errors that grammar checks miss entirely.
-At the indexing layer, robots.txt and llms.txt define what enters the RAG pipeline. The llms.txt file signals to language models which content is authoritative, how the site is organized, and what each content type is intended to answer. Research into agent documentation access patterns confirms that agents treat llms.txt as a primary discovery mechanism — and that sites without one force agents to reconstruct structure from memory, which produces inconsistent and sometimes fabricated URLs. Without these controls, a RAG pipeline indexes indiscriminately, and answer quality reflects it.
-Continuous improvement through content architecture and metrics
-Documentation quality at AI-native platforms degrades silently without feedback mechanisms. Two failure modes compound each other: content becomes stale as the product evolves, and content architecture works against agent consumption patterns.
-Research into how agents actually consume documentation reveals that agents are mechanically prevented from seeing content past truncation thresholds — often around 150,000 characters — without knowing they've missed anything. Long pages with tabbed or dropdown-filtered content serialize into undifferentiated walls of text. Smaller, focused pages scoped to specific tasks and audiences dramatically outperform long reference pages for agent retrieval accuracy.
-The improvement loop needs to be instrumented: site analytics identify content users abandon immediately, support ticket patterns surface recurring gaps, and AI response quality metrics show which content areas are producing unreliable answers. At Pegasystems, I used support ticket analytics systematically to prioritize documentation improvements across release cycles. At AI-native platforms, AI response quality adds a third feedback signal, one that closes the loop between what documentation says and what the product actually delivers.
+A practical quality control stack has several layers including:
+
+* A style guide defining the tone, structure, and terminology is included in a available and used while writers draft content and some version of it running operationally before content hits the repository. At Legion Intelligence, I built a style guide in Confluence and wired its standards directly into an LLM proofreading prompt, so every content check-in is validated against the guide before it merges.
+* The next layer is fabrication detection: building verification workflows that cross-reference AI-generated content against authoritative internal sources before publication, catching plausible-sounding errors that grammar checks miss entirely.
+* At the indexing layer, `robots.txt` and `llms.txt` define what enters the RAG pipeline. The `llms.txt` file signals to language models which content is authoritative, how the site is organized, and what each content type is intended to answer. Research into agent documentation access patterns confirms that agents treat `llms.txt` as a primary discovery mechanism; sites without one force agents to reconstruct structure from memory, which produces inconsistent and sometimes fabricated URLs. Without these controls, a RAG pipeline indexes indiscriminately, and answer quality reflects it.
+  ## Continuous improvement through content architecture and metrics
+  Documentation quality at AI-native platforms degrades silently without feedback mechanisms. Two failure modes compound each other: content becomes stale as the product evolves, and content architecture works against agent consumption patterns.
+  Research into how agents consume documentation reveals that agents are mechanically prevented from seeing content past truncation thresholds — often around 150,000 characters — without knowing they've missed anything. Long pages with tabbed or dropdown-filtered content, common in many documentation sites, serialize into undifferentiated walls of text and must be avoided. A better approach is requiring articles to stay under 800 characters. Such focused pages, scoped to specific tasks and audiences, dramatically outperform long reference pages for agent retrieval accuracy.
+
+The improvement loop needs to be instrumented: 
+
+* Site analytics identify content users abandon immediately
+* Support ticket patterns surface recurring gaps and must prioritized in the organization
+* AI response quality metrics show which content areas are producing unreliable answers. At AI-native platforms, AI response quality adds a third feedback signal, one that can close this quality gap and lead to better responses.
+
 The documentation architecture that supports continuous improvement is structured, instrumented, and built to operate continuously rather than maintained in periodic bursts.
