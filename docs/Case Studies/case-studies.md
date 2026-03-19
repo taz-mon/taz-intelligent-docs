@@ -8,7 +8,7 @@ hidden: false
 metadata:
   robots: index
 ---
-When a product's core value is delivered through AI-generated responses, documentation can be the source for  operational input and output in your product. This means a company's doc team is part of your strategic messaging. The documentation architecture has to thoughtfully developed so documentation is built as part of your product DevOps pipeline and includes specific tooling, quality control enforcement. The documentation pipeline has to include feedback loops that treat documentation as infrastructure rather than artifact.
+When a product's core value is delivered through AI-generated responses, documentation is the source for those responses. For example, in a FinOps platform, if an engineer asks the platform to pinpoint what causes a specific cost to spike, or which workloads are inflating cloud bills, that answer comes from the AI layer, which draws from existing documentation. This means documentation is a strategic part of the product, not a support artifact published after the fact.
 
 ## Domain accuracy as a foundation
 
@@ -30,9 +30,9 @@ A practical quality control stack has several layers including:
 * At the indexing layer, `robots.txt` and `llms.txt` define what enters the RAG pipeline. The `llms.txt` file signals to language models which content is authoritative, how the site is organized, and what each content type is intended to answer. Research into agent documentation access patterns confirms that agents treat `llms.txt` as a primary discovery mechanism; sites without one force agents to reconstruct structure from memory, which produces inconsistent and sometimes fabricated URLs. Without these controls, a RAG pipeline indexes indiscriminately, and answer quality reflects it.
   ## Continuous improvement through content architecture and metrics
   Documentation quality at AI-native platforms degrades silently without feedback mechanisms. Two failure modes compound each other: content becomes stale as the product evolves, and content architecture works against agent consumption patterns.
-  Research into how agents consume documentation reveals that agents are mechanically prevented from seeing content past truncation thresholds — often around 150,000 characters — without knowing they've missed anything. Long pages with tabbed or dropdown-filtered content, common in many documentation sites, serialize into undifferentiated walls of text and must be avoided. A better approach is requiring articles to stay under 800 characters. Such focused pages, scoped to specific tasks and audiences, dramatically outperform long reference pages for agent retrieval accuracy.
+  Research into how agents consume documentation reveals that agents are mechanically prevented from seeing content past truncation thresholds — often around 150,000 characters — without knowing they've missed anything. Long pages with tabbed or dropdown-filtered content, common in many documentation sites, serialize into undifferentiated walls of text and must be avoided. A better approach is requiring articles to stay under 800 words (~5000 characters). Such focused pages, scoped to specific tasks and audiences, dramatically outperform long reference pages for agent retrieval accuracy.
 
-The improvement loop needs to be instrumented: 
+The improvement loop needs to be instrumented:
 
 * Site analytics identify content users abandon immediately
 * Support ticket patterns surface recurring gaps and must prioritized in the organization
