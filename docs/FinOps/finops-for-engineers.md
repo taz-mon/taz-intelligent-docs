@@ -6,7 +6,7 @@ excerpt: >-
   the quality of those answers traces back to decisions made long before any
   query runs.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
