@@ -27,7 +27,7 @@ Enterprise platform documentation served me well for two decades. But the work t
 * **Cloud-native platforms:** systems designed to run in distributed cloud environments
 * **MLOps:** tools for deploying and managing machine learning models in production
 * **Observability tools:** platforms that provide visibility into system health and performance
-* **Streaming databases and AI systems:**
+* **AI gateway and agent infrastructure:** platforms that centralize identity-linked access and governance for LLM providers, coding agents, and agentic workflows — where documentation must bridge networking, security, and AI operations audiences simultaneously
 
 I want to help those teams build documentation systems that scale alongside their products, integrate with CI/CD (continuous integration and delivery) pipelines, and serve both human readers and AI agents.
 

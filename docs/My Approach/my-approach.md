@@ -4,7 +4,7 @@ excerpt: >-
   I'm an enthusiastic, detail-oriented principal tech writer with extensive
   experience writing documentation. 
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

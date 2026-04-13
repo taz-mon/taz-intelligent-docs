@@ -4,7 +4,7 @@ excerpt: >-
   Ideas on making documentation in an AI-native platform  available for
   operational input.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
