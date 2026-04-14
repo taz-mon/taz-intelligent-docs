@@ -33,16 +33,6 @@ Two versions available — Anthropic SDK (`claude-sonnet-4-6`) and OpenAI SDK
 **[View on GitHub — Anthropic version](https://github.com/taz-mon/tazdocs-as-code/blob/main/notebooks/vectorlint-pipeline-demo-anthropic.ipynb)**  
 **[View on GitHub — OpenAI version](https://github.com/taz-mon/tazdocs-as-code/blob/main/notebooks/vectorlint-pipeline-demo-openai.ipynb)**
 
-### Blog: Writing for agents, not just for humans anymore
-
-A practitioner-voice article on what it means to write documentation for a new 
-audience — the RAG pipelines and coding agents that process content 
-without reading it. Covers frontmatter schema design as a retrieval engineering 
-decision, with citations to Dachary Carey's agent skill analysis and the 
-Agent-Friendly Documentation Spec.
-
-**[Read the post](/blog/writing-for-agents)**
-
 ---
 
 ## Open-source project documentation
@@ -106,3 +96,15 @@ JDBC URL configuration for external relational database instances:
 Proactive support article written to reduce ticket volume — explains which 
 duplicate key errors are benign and when to open a ticket:  
 **[Reviewing duplicate key value errors](https://docs.pega.com/bundle/platform/page/platform/system-administration/review-duplicate-key-value-errors.html)**
+
+---
+
+### Blog: Writing for agents, not just for humans anymore
+
+A practitioner-voice article on what it means to write documentation for a new 
+audience — the RAG pipelines and coding agents that process content 
+without reading it. Covers frontmatter schema design as a retrieval engineering 
+decision, with citations to Dachary Carey's agent skill analysis and the 
+Agent-Friendly Documentation Spec.
+
+**[Read the post](/docs/writing-for-agents)**
