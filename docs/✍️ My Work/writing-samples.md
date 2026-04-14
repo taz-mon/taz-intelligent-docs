@@ -85,6 +85,20 @@ duplicate key errors are benign and when to open a ticket:
 
 ---
 
+## API documentation
+
+### JVN Chatbot API
+
+End-to-end API documentation for a Node.js/Express chatbot API I built as a 
+portfolio project. Includes a full OpenAPI 3.0 specification and interactive 
+documentation integrated into this Docusaurus site via Redocusaurus 2.5.0, 
+enabling inline endpoint validation.
+
+**[API reference](https://taz-mon.github.io/tazdocs-as-code/api/jvn-chatbot)**  
+**[JVN overview](https://taz-mon.github.io/tazdocs-as-code/docs/my-docs/jvn-intro)**
+
+---
+
 ### Blog: Writing for agents, not just for humans anymore
 
 A practitioner-voice article on what it means to write documentation for a new 
