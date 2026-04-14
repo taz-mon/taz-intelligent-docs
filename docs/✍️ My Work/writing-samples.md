@@ -51,20 +51,6 @@ I wrote these articles in coordination with the project lead, using MDX on Mintl
 
 ---
 
-## API documentation
-
-### JVN Chatbot API
-
-End-to-end API documentation for a Node.js/Express chatbot API I built as a 
-portfolio project. Includes a full OpenAPI 3.0 specification and interactive 
-documentation integrated into this Docusaurus site via Redocusaurus 2.5.0, 
-enabling inline endpoint validation.
-
-**[API reference](/api/jvn-chatbot)**  
-**[JVN overview](/docs/my-docs/jvn-intro)**
-
----
-
 ## Enterprise infrastructure samples
 
 The following samples are from my nine years at Pegasystems documenting 
@@ -96,6 +82,20 @@ JDBC URL configuration for external relational database instances:
 Proactive support article written to reduce ticket volume — explains which 
 duplicate key errors are benign and when to open a ticket:  
 **[Reviewing duplicate key value errors](https://docs.pega.com/bundle/platform/page/platform/system-administration/review-duplicate-key-value-errors.html)**
+
+---
+
+## API documentation
+
+### JVN Chatbot API
+
+End-to-end API documentation for a Node.js/Express chatbot API I built as a 
+portfolio project. Includes a full OpenAPI 3.0 specification and interactive 
+documentation integrated into this Docusaurus site via Redocusaurus 2.5.0, 
+enabling inline endpoint validation.
+
+**[API reference](https://taz-mon.github.io/tazdocs-as-code/api/jvn-chatbot)**  
+**[JVN overview](https://taz-mon.github.io/tazdocs-as-code/docs/my-docs/jvn-intro)**
 
 ---
 
