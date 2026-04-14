@@ -1,6 +1,6 @@
 ---
 title: Writing for agents, not just for humans anymore
-excerpt: >-
+excerpt: >-gr
   How technical writers develop methods for documentation's second audience —
   the agents and RAG pipelines that process content without reading it.
 deprecated: false
@@ -12,8 +12,6 @@ metadata:
 Technical writing has always evolved to meet new constraints. We learned information architecture when documentation moved online. We learned topic-based authoring when content management systems demanded structured reuse. We learned docs-as-code when engineering teams needed documentation in the same workflows as the software it described. Each shift asked us to develop new methods — and each time, the writers who understood the new constraints earliest produced the best outcomes.
 
 The current shift is this: documentation now has a second audience that processes it instead of reading it. And the methods that serve this audience start with frontmatter.
-
-<!-- truncate -->
 
 ## The second audience
 
